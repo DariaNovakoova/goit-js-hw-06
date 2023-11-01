@@ -10,7 +10,6 @@ inputEvent.addEventListener("blur", (elem) => {
     elem.currentTarget.value.length ===
     Number(inputEvent.getAttribute("data-length"))
   ) {
-    inputEvent.style.borderColor;
     inputEvent.classList.remove("invalid");
     inputEvent.classList.add("valid");
   } else {

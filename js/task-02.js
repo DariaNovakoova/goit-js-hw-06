@@ -16,12 +16,11 @@ const ingredients = [
 
 const list = document.querySelector("#ingredients");
 
-const listName = ingredients.map((ingredient) => {
+const liElements = ingredients.map((ingredient) => {
   const elemList = document.createElement("li");
-  elemList.classList.add("item");
   elemList.textContent = ingredient;
-
-  list.append(elemList);
+  elemList.classList.add("item");
+  return elemList;
 });
 
-console.log(list);
+list.append(...liElements);
